@@ -1,0 +1,47 @@
+.inicio{
+	background-image: url(../img-entrega1/oficina.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100vh;
+
+    h2{
+        @include title($textXXL, 700);
+        text-align: center;
+        font-family: $fontH2Inicio;
+        color: map-get($map:$paleta,$key:'colorTituloInicio');
+        width: 80%;
+        height: auto;
+        margin:0 auto;
+        animation-name:textAparicion;
+        animation-duration:2s;
+        animation-timing-function: ease;
+    }
+
+    ul li{
+        @include title($textSm, 500);
+        list-style-type: none;
+        width: 100%;
+        text-align:  center;
+        padding-top: .5rem;
+        opacity: .6;
+
+        a{
+            text-decoration: none;
+            color: map-get($map:$paleta,$key:'colorAInicio');
+            width: 100%;
+            @include title($textLg, 700);
+
+            &:hover{
+                opacity: 1;
+                font-weight: 500;
+                color: map-get($map:$paleta,$key:'colorAhoverInicio');
+            }
+        }
+    }
+}

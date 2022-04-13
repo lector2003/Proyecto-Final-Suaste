@@ -1,0 +1,370 @@
+//nessting
+
+//empieza header
+.header img{
+	display: none;
+
+	@media (min-width: 768px){
+		height: 50rem;
+		width: 100%;
+		display: block;
+	}
+}
+
+//terina header
+
+//empieza quien soy
+
+.quienSoy h1{
+	@include title($textXL, 700);
+	color: map-get($map:$paleta,$key:'colorH1');
+	animation-name:textAparicion;
+	animation-duration:2s;
+	animation-timing-function: ease;
+}
+
+.quienSoy p{
+	@include text($textMd, 3rem);
+	text-align: center;
+	@media (min-width: 1200px){
+		width: 75%;
+ 		margin: 0 auto;
+	}
+
+}
+
+//termina quien soy
+
+
+//empieza conjunto de ramas
+
+.bg-card{
+	background-color: map-get($map:$paleta,$key:'colorBgCard');
+}
+
+
+.sinBordes{
+	border:none;
+}
+
+.conjuntoDeRamas h2 {
+	@include title($textLg, 700);
+	text-align: center;
+	margin:auto 0;
+	padding:1rem 0;
+	color: map-get($map:$paleta,$key:'colorH2');
+	animation-name:textAparicion;
+	animation-duration:2s;
+	animation-timing-function: ease;
+	
+		
+}
+
+.conjuntoDeRamas p {
+	@include text($textMd, 3rem);
+	text-align: center;
+	margin:0 auto;
+	margin-bottom: 3rem;
+	width: 100%;
+}
+
+.conjuntoDeRamas img{
+	width: 20rem;
+	animation-name:textAparicion;
+	animation-duration:2.5s;
+	animation-timing-function: ease;
+	
+ }
+
+ @media (min-width: 768px){
+ 	.mision{
+ 		margin:0 auto;
+ 	}
+
+}
+
+//termina conjunto de ramas
+
+.bordesImg{
+	border-style: solid;
+	color: map-get($map:$paleta,$key:'borderColorImg');
+}
+
+
+//comienza galeria
+
+
+.cajaGaleria{
+	background-color: map-get($map:$paleta,$key:'colorBgUbicacion');
+	h3{
+		color: map-get($map:$paleta,$key:'colorH3');
+		@include title($textXL, 700);
+	}
+
+	.carousel-control-prev-icon{
+		height: 8rem;
+		width: 5rem;
+		background-color:map-get($map:$paleta,$key:'colorGaleriaBtn');
+	}
+
+	.carousel-control-next-icon{
+		@extend .carousel-control-prev-icon;
+	}
+}
+
+
+.carousel-inner img{
+	width: 40%;
+	height: 5rem;
+
+}
+
+//termina galeria
+
+
+//Empieza servicios
+
+.servicios h1{
+	@include title($textXL, 700);
+	color: map-get($map:$paleta,$key:'colorH1Servicios');
+	margin:1rem 0;
+	animation-name:textAparicion;
+	animation-duration:2.5s;
+	animation-timing-function: ease;
+}
+
+.servicios h2{
+	@include title($textXL, 700);
+	margin-bottom:  1rem;
+	color: map-get($map:$paleta,$key:'colorH2');
+	animation-name:textAparicion;
+	animation-duration:2.5s;
+	animation-timing-function: ease;
+
+}
+
+.servicios ul{
+	width: 90%;
+	margin-left: 2rem;
+
+	@media (min-width: 992px){
+ 		width: 100%;
+	}
+
+	li{
+		@include text($textMd, 2.2rem);
+		font-size: 1.7rem;	
+		line-height: 2.2rem;
+		padding-bottom:1rem;
+		list-style-image: url(../img-entrega1/item.jpg);
+
+		@media (min-width: 911px){
+ 		margin-top: 1.7rem;
+ 		}
+	
+	}
+}
+
+
+.img-servicios{
+	display: none;
+	width: 40%;
+
+
+	@media (min-width: 992px){
+ 		display: block;
+ 		width: 50%;
+
+
+ 		img{
+		height: 30rem;
+		width: 40%;
+		margin-left: 9rem;
+		}
+ 	}
+
+
+
+}
+
+//termina servicios
+
+//empieza donde encontrarme
+
+.ubicacion{
+	margin:4rem 0;
+	display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.ubicacion div{
+	display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+	background-color: map-get($map:$paleta,$key:'colorBgUbicacion');
+ 	width: 90%;
+ 	height: auto;
+
+
+ 	@media (min-width: 320px){
+		height: 50rem;
+	}
+
+	@media (min-width: 1024px){
+		height: 70rem;
+	}
+}
+
+.ubicacion h1{
+	@include title($textXL,700);
+	padding: 2rem 0;
+	color: map-get($map:$paleta,$key:'colorH1');
+	animation-name:textAparicion;
+	animation-duration:2.5s;
+	animation-timing-function: ease;
+
+}
+
+.iframe{
+	width: 80%;
+	height:20%;
+
+	@media (min-width: 320px){
+		height: 70%;
+	}
+}
+
+//termina donde encontrarme
+
+//empieza contacto
+
+.contacto{
+	margin-top: 1.5rem;
+
+	@media (min-width: 992px){
+		margin-bottom: 4rem;
+	}
+
+	@media (min-width: 1300px){
+		margin-bottom: 12rem;
+	}
+
+
+	h1{
+		@include title($textXL, 700);
+		color: map-get($map:$paleta,$key:'colorH1');
+		text-align: center;
+		animation-name:textAparicion;
+		animation-duration:2.5s;
+		animation-timing-function: ease;
+	}
+
+	form{
+   	 	margin:1rem auto;
+   		 width: 90%;
+
+   		textarea{
+			resize: none;
+			height:10rem;
+			font-size: $textMd;
+		}
+
+		label{
+			font-size: $textMd;
+			padding:.3rem 0;
+		}
+
+		input{
+			font-size: $textMd;
+			height: 2.5rem;
+		}
+
+	}
+
+}
+
+
+.btn{
+	font-size: $textMd;
+	background-color: map-get($map:$paleta,$key:'colorBgBtnContact');
+	color: map-get($map:$paleta,$key:'colorBtnContact');
+}
+
+@media (min-width: 576px){
+	.btnCancelar{
+		margin:0 3rem;
+	}
+
+}
+
+@media (min-width: 768px){
+	.btnCancelar{
+		margin:0 5rem;
+	}
+
+}
+
+
+.contacto__general{
+	margin:1.5rem auto;
+
+	h2{
+		@include title($textXL, 700);
+		color: map-get($map:$paleta,$key:'colorH2');
+		animation-name:textAparicion;
+		animation-duration:2.5s;
+		animation-timing-function: ease;
+	}
+
+	ul{
+		width: 80%;
+
+		@media (min-width: 520px){
+			width: 50%;
+		}
+
+		li{
+			font-size: $textMd;
+			padding: .5rem 0;
+		}	
+
+	}
+}
+
+
+
+
+
+.home{
+	list-style-image: url(../img-entrega1/home.png);
+}
+
+.tel{
+	list-style-image: url(../img-entrega1/telephone.png);
+}
+
+.email{
+	list-style-image: url(../img-entrega1/mail.png);
+}
+
+.redSocial{
+	list-style-image: url(../img-entrega1/facebook.png);
+}
+
+.contacto__general img{
+	width: 4.5rem;
+}
+
+/*Comienza animaciones*/
+
+@keyframes textAparicion{
+	from{opacity:0 };
+	to{opacity:1 };
+}
+
+//termina animaciones
+
+

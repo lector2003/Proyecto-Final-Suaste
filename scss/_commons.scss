@@ -1,0 +1,39 @@
+//variables globales
+
+//map
+$paleta:(
+	'bodyColor':rgba(239,240,234,1),
+	'colorTituloInicio':rgba(76,85,109,1),
+	'colorAInicio':rgba(126,72,44,1),
+	'colorAhoverInicio':rgba(154,160,136,1),
+	'colorBgNavBr':rgba(214,209,167,1),
+	'colorLiNavBar':#485956,
+	'colorHoverLi':rgba(72,44,126,1),
+	'colorNavBarToggler':#485956,
+	'colorBotonHamburguesa':#485956,
+	'colorBgCard':rgba(239,240,234,1),
+	'colorH1':#485956,
+	'colorH1Servicios':rgba(178,168,81,1),
+	'colorH2':#485956,
+	'colorH3':#485956,
+	'colorGaleriaBtn':#485956,
+	'colorBgBtnContact':rgba(72,101,115,1),
+	'colorBtnContact':rgba(158,149,123,1),
+	'colorBgUbicacion':rgba(219,201,152,1),
+	'colorBgFooter':rgba(143,152,178,1),
+	'borderColorImg':rgba(255,230,155,1),
+	);
+
+
+
+//mixin
+
+@mixin text($font-size, $line-height){
+	font-size: $font-size;
+	line-height: $line-height;
+}
+
+@mixin title($font-size, $font-weight){
+	font-size: $font-size;
+	font-weight: $font-weight;
+}

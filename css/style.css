@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+html {
+  font-size: 62.5%; }
+
+* {
+  font-family: "Karla", sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #eff0ea;
+  overflow-x: hidden; }
+
+.inicio {
+  background-image: url(../img-entrega1/oficina.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100vh; }
+  .inicio h2 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: #4c556d;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    animation-name: textAparicion;
+    animation-duration: 2s;
+    animation-timing-function: ease; }
+  .inicio ul li {
+    font-size: 1.5rem;
+    font-weight: 500;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: .5rem;
+    opacity: .6; }
+    .inicio ul li a {
+      text-decoration: none;
+      color: #7e482c;
+      width: 100%;
+      font-size: 2.2rem;
+      font-weight: 700; }
+      .inicio ul li a:hover {
+        opacity: 1;
+        font-weight: 500;
+        color: #9aa088; }
+
+.navbar {
+  background-color: #d6d1a7; }
+  .navbar img {
+    width: 25rem;
+    margin: auto 0;
+    padding: 2rem 1rem; }
+  .navbar ul {
+    padding-right: 1rem; }
+    .navbar ul li {
+      list-style-type: none;
+      font-size: 2.2rem;
+      padding: .3rem 1rem; }
+      .navbar ul li a {
+        text-decoration: none;
+        color: #485956;
+        font-weight: 300; }
+        .navbar ul li a:hover {
+          font-weight: 700;
+          color: #482c7e; }
+
+.navbar-toggler {
+  color: #485956;
+  border-color: #485956; }
+
+.navbar-toggler-icon {
+  background-image: url(../img-entrega1/boton-burguer.svg);
+  width: 27px;
+  border-color: #485956; }
+
+.header img {
+  display: none; }
+  @media (min-width: 768px) {
+    .header img {
+      height: 50rem;
+      width: 100%;
+      display: block; } }
+
+.quienSoy h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #485956;
+  animation-name: textAparicion;
+  animation-duration: 2s;
+  animation-timing-function: ease; }
+
+.quienSoy p {
+  font-size: 1.7rem;
+  line-height: 3rem;
+  text-align: center; }
+  @media (min-width: 1200px) {
+    .quienSoy p {
+      width: 75%;
+      margin: 0 auto; } }
+
+.bg-card {
+  background-color: #eff0ea; }
+
+.sinBordes {
+  border: none; }
+
+.conjuntoDeRamas h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: auto 0;
+  padding: 1rem 0;
+  color: #485956;
+  animation-name: textAparicion;
+  animation-duration: 2s;
+  animation-timing-function: ease; }
+
+.conjuntoDeRamas p {
+  font-size: 1.7rem;
+  line-height: 3rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  width: 100%; }
+
+.conjuntoDeRamas img {
+  width: 20rem;
+  animation-name: textAparicion;
+  animation-duration: 2.5s;
+  animation-timing-function: ease; }
+
+@media (min-width: 768px) {
+  .mision {
+    margin: 0 auto; } }
+
+.bordesImg {
+  border-style: solid;
+  color: #ffe69b; }
+
+.cajaGaleria {
+  background-color: #dbc998; }
+  .cajaGaleria h3 {
+    color: #485956;
+    font-size: 2.5rem;
+    font-weight: 700; }
+  .cajaGaleria .carousel-control-prev-icon, .cajaGaleria .carousel-control-next-icon {
+    height: 8rem;
+    width: 5rem;
+    background-color: #485956; }
+
+.carousel-inner img {
+  width: 40%;
+  height: 5rem; }
+
+.servicios h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #b2a851;
+  margin: 1rem 0;
+  animation-name: textAparicion;
+  animation-duration: 2.5s;
+  animation-timing-function: ease; }
+
+.servicios h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #485956;
+  animation-name: textAparicion;
+  animation-duration: 2.5s;
+  animation-timing-function: ease; }
+
+.servicios ul {
+  width: 90%;
+  margin-left: 2rem; }
+  @media (min-width: 992px) {
+    .servicios ul {
+      width: 100%; } }
+  .servicios ul li {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    padding-bottom: 1rem;
+    list-style-image: url(../img-entrega1/item.jpg); }
+    @media (min-width: 911px) {
+      .servicios ul li {
+        margin-top: 1.7rem; } }
+
+.img-servicios {
+  display: none;
+  width: 40%; }
+  @media (min-width: 992px) {
+    .img-servicios {
+      display: block;
+      width: 50%; }
+      .img-servicios img {
+        height: 30rem;
+        width: 40%;
+        margin-left: 9rem; } }
+
+.ubicacion {
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center; }
+
+.ubicacion div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #dbc998;
+  width: 90%;
+  height: auto; }
+  @media (min-width: 320px) {
+    .ubicacion div {
+      height: 50rem; } }
+  @media (min-width: 1024px) {
+    .ubicacion div {
+      height: 70rem; } }
+
+.ubicacion h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 2rem 0;
+  color: #485956;
+  animation-name: textAparicion;
+  animation-duration: 2.5s;
+  animation-timing-function: ease; }
+
+.iframe {
+  width: 80%;
+  height: 20%; }
+  @media (min-width: 320px) {
+    .iframe {
+      height: 70%; } }
+
+.contacto {
+  margin-top: 1.5rem; }
+  @media (min-width: 992px) {
+    .contacto {
+      margin-bottom: 4rem; } }
+  @media (min-width: 1300px) {
+    .contacto {
+      margin-bottom: 12rem; } }
+  .contacto h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #485956;
+    text-align: center;
+    animation-name: textAparicion;
+    animation-duration: 2.5s;
+    animation-timing-function: ease; }
+  .contacto form {
+    margin: 1rem auto;
+    width: 90%; }
+    .contacto form textarea {
+      resize: none;
+      height: 10rem;
+      font-size: 1.7rem; }
+    .contacto form label {
+      font-size: 1.7rem;
+      padding: .3rem 0; }
+    .contacto form input {
+      font-size: 1.7rem;
+      height: 2.5rem; }
+
+.btn {
+  font-size: 1.7rem;
+  background-color: #486573;
+  color: #9e957b; }
+
+@media (min-width: 576px) {
+  .btnCancelar {
+    margin: 0 3rem; } }
+
+@media (min-width: 768px) {
+  .btnCancelar {
+    margin: 0 5rem; } }
+
+.contacto__general {
+  margin: 1.5rem auto; }
+  .contacto__general h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #485956;
+    animation-name: textAparicion;
+    animation-duration: 2.5s;
+    animation-timing-function: ease; }
+  .contacto__general ul {
+    width: 80%; }
+    @media (min-width: 520px) {
+      .contacto__general ul {
+        width: 50%; } }
+    .contacto__general ul li {
+      font-size: 1.7rem;
+      padding: .5rem 0; }
+
+.home {
+  list-style-image: url(../img-entrega1/home.png); }
+
+.tel {
+  list-style-image: url(../img-entrega1/telephone.png); }
+
+.email {
+  list-style-image: url(../img-entrega1/mail.png); }
+
+.redSocial {
+  list-style-image: url(../img-entrega1/facebook.png); }
+
+.contacto__general img {
+  width: 4.5rem; }
+
+/*Comienza animaciones*/
+@keyframes textAparicion {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  background-color: #8f98b2; }
+  .footer img {
+    width: 20rem;
+    padding-bottom: 3rem; }

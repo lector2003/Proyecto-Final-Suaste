@@ -1,0 +1,17 @@
+//nestting 
+
+.footer{
+	display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+	height: auto;
+	width: 100%;
+	background-color: map-get($map:$paleta,$key:'colorBgFooter');
+	img {
+		width: 20rem;
+		padding-bottom: 3rem;
+	}
+}
+
+ 
