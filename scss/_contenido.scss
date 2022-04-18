@@ -95,7 +95,12 @@
 
 
 .cajaGaleria{
+	display: none;
 	background-color: map-get($map:$paleta,$key:'colorBgUbicacion');
+	
+	@media (min-width: 768px){
+		display: block;
+	}
 	h3{
 		color: map-get($map:$paleta,$key:'colorH3');
 		@include title($textXL, 700);
@@ -118,6 +123,8 @@
 	height: 5rem;
 
 }
+
+
 
 //termina galeria
 

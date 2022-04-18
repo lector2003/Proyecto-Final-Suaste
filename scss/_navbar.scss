@@ -2,9 +2,13 @@
 .navbar{
 	background-color: map-get($map:$paleta,$key:'colorBgNavBr');
 	img{
-		width: 25rem;
+		width: 21rem;
  		margin:auto 0;
  		padding: 2rem 1rem;
+
+ 		@media (min-width: 320px){
+		width: 25rem;
+	}
 		}
 		ul{
 			padding-right: 1rem;
