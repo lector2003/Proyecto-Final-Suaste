@@ -314,6 +314,13 @@
 
 }
 
+.btnEnviar a{
+	text-decoration: none;
+	list-style: none;
+	color: map-get($map:$paleta,$key:'colorBtnContact');
+
+}
+
 
 .contacto__general{
 	margin:1.5rem auto;
@@ -375,3 +382,36 @@
 //termina animaciones
 
 
+
+//Empieza pagina de error 404
+
+
+.div-error{
+	width: 100%;
+
+	img{
+		width: 100%;
+		height:auto;
+	}
+}
+
+.error404{
+	h1{
+		font-family: $fontH2Inicio;
+		font-size: 4rem;
+		color: map-get($map:$paleta,$key:'colorh1Error404');
+		margin-left: .5rem;
+	}
+
+	button{
+		margin-left: .5rem;
+		border-style: none;
+	
+	}
+}
+
+@media (min-width: 576px){
+	.btnVolver{
+		margin: 3rem;
+	}
+}

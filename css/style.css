@@ -25,6 +25,18 @@ body {
   justify-content: space-evenly;
   flex-direction: column;
   height: 100vh; }
+  .inicio h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: #4c556d;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    animation-name: textAparicion;
+    animation-duration: 2s;
+    animation-timing-function: ease; }
   .inicio h2 {
     font-size: 2.7rem;
     font-weight: 700;
@@ -299,6 +311,11 @@ body {
   .btnCancelar {
     margin: 0 5rem; } }
 
+.btnEnviar a {
+  text-decoration: none;
+  list-style: none;
+  color: #9e957b; }
+
 .contacto__general {
   margin: 1.5rem auto; }
   .contacto__general h2 {
@@ -338,6 +355,26 @@ body {
     opacity: 0; }
   to {
     opacity: 1; } }
+
+.div-error {
+  width: 100%; }
+  .div-error img {
+    width: 100%;
+    height: auto; }
+
+.error404 h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 4rem;
+  color: #485956;
+  margin-left: .5rem; }
+
+.error404 button {
+  margin-left: .5rem;
+  border-style: none; }
+
+@media (min-width: 576px) {
+  .btnVolver {
+    margin: 3rem; } }
 
 .footer {
   display: flex;
