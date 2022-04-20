@@ -216,7 +216,7 @@
  	height: auto;
 
 
- 	@media (min-width: 320px){
+ 	@media (min-width: 280px){
 		height: 50rem;
 	}
 
@@ -237,11 +237,7 @@
 
 .iframe{
 	width: 80%;
-	height:20%;
-
-	@media (min-width: 320px){
-		height: 70%;
-	}
+	height: 70%;
 }
 
 //termina donde encontrarme
